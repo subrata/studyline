@@ -3,6 +3,7 @@ class HomesController < ApplicationController
   end
 
   def about_company
+      
   end
 
   def terms
@@ -10,4 +11,5 @@ class HomesController < ApplicationController
 
   def privacy
   end
+    
 end
