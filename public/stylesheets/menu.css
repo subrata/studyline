@@ -1,0 +1,25 @@
+#dropmenudiv{
+position:absolute;
+border:0px solid black;
+border-bottom-width: 0;
+font:bold 12px arial;
+line-height:22px;
+z-index:100;
+margin-top:17px;
+}
+
+#dropmenudiv a{
+width: 100%;
+display: block;
+text-indent: 7px;
+border-bottom: 1px solid #565656;
+padding: 1px 0;
+text-decoration: none;
+color:#fff;
+background:#2d2d2d;
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+background-color: #727272;
+color:#ffffff;
+}
