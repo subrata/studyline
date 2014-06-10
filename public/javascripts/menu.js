@@ -1,6 +1,6 @@
 var menu1=new Array()
-menu1[0]='<a href="#">Corporate Overview</a>'
-menu1[1]='<a href="#">Vision and Mission</a>'
+menu1[0]='<a href="/homes/about_company">Studyline Overview</a>'
+menu1[1]='<a href="/homes/about_company">Vision and Mission</a>'
 
 //Contents for menu 2, and so on
 var menu2=new Array()

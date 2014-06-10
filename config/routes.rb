@@ -9,6 +9,7 @@ Studyline::Application.routes.draw do
   get "homes/terms"
 
   get "homes/privacy"
+  get "homes/service"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
