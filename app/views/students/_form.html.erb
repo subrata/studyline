@@ -1,0 +1,87 @@
+<%= form_for(@student) do |f| %>
+  <% if @student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+      <% @student.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "name of student" %><br />
+    <%= f.text_field :name, :size => "45" %>
+  </div>
+  <div class="field">
+    <%= f.label "name of gurdian with contact no"  %><br />
+    <%= f.text_field :gurdian, :size => "45" %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_area :address,:rows=>"10" %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.select :gender, [ 'Male', 'Female' ], :prompt => 'Select One...', :size => "45" %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone,:size => "45"  %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email,:size => "45"  %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :qualification %><br />
+    <%= f.text_field :qualification,:size => "45"  %>
+  </div>
+  <div class="field">
+    <%= f.label :coaching %><br />
+    <%= f.select :coaching,['WBJEE', 'JEXPO', 'CAT', "MAT"], :prompt => 'Select One...', :style=>"width: 300px;"  %>
+  </div>
+  <div class="field">
+    <%#= f.label :registration_type %>
+    <%= f.hidden_field :registration_type,:value => "coaching"  %>
+  </div>
+  <!-- <div class="field">
+    <%= f.label :cexam %><br />
+    <%= f.text_field :cexam %>
+  </div>
+  <div class="field">
+    <%= f.label :place %><br />
+    <%= f.text_field :place %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :course %><br />
+    <%= f.text_field :course %>
+  </div>
+  <div class="field">
+    <%= f.label :experience %><br />
+    <%= f.text_field :experience %>
+  </div>
+  <div class="field">
+    <%= f.label :pcompany %><br />
+    <%= f.text_field :pcompany %>
+  </div>
+  <div class="field">
+    <%= f.label :csalary %><br />
+    <%= f.text_field :csalary %>
+  </div>
+  <div class="field">
+    <%= f.label :esalary %><br />
+    <%= f.text_field :esalary %>
+  </div> -->
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

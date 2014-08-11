@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  address: MyText
+  phone: MyString
+  gurdian: MyString
+  email: MyString
+  gender: MyString
+  qualification: MyString
+  coaching: MyString
+  registration_type: MyString
+  cexam: MyString
+  place: MyString
+  state: MyString
+  course: MyString
+  experience: MyString
+  pcompany: MyString
+  csalary: MyString
+  esalary: MyString
+
+two:
+  name: MyString
+  address: MyText
+  phone: MyString
+  gurdian: MyString
+  email: MyString
+  gender: MyString
+  qualification: MyString
+  coaching: MyString
+  registration_type: MyString
+  cexam: MyString
+  place: MyString
+  state: MyString
+  course: MyString
+  experience: MyString
+  pcompany: MyString
+  csalary: MyString
+  esalary: MyString

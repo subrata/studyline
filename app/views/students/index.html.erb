@@ -1,0 +1,83 @@
+<div class="cont-outer">
+    <div class="cont-inr">
+        <div class="cont-lft">
+            <h2 style="color: #19388A;font: bold 20px Arial, Helvetica, sans-serif">Student Registration:</h2>
+            
+            <ul class="sregistration" style="padding-top: 3em; ">
+            	<li><%= link_to 'REGISTRATION FOR COACHING:', new_student_path %></li><br/>
+            	<li><%=  link_to "REGISTRATION FOR ADMISSION:",  new_admission_students_path %></li><br/>
+            	<li><%=  link_to "REGISTRATION FOR TRAINING AND PLACEMENT::",  new_placement_students_path %></li><br/>
+            </ul>
+            <p style="margin-top:1em;font:bold 20px Arial">This page is under Construction</p>
+     
+       
+     
+        </div>
+
+        <!--Content Right-->
+        <div class="cont-rgt">
+            <a href="#" title="Download Brochure"><img src="/images/btn-download-brochure.png" alt="Download Brochure" /></a>
+            <%= render "shared/right_content" %>
+        </div>
+
+        <!--/Content Right-->
+
+    </div>
+
+</div>
+<!--/CONTENT-->
+
+<!-- <h1>Listing students</h1> -->
+<!-- <table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Phone</th>
+    <th>Gurdian</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Qualification</th>
+    <th>Coaching</th>
+    <th>Registration type</th>
+    <th>Cexam</th>
+    <th>Place</th>
+    <th>State</th>
+    <th>Course</th>
+    <th>Experience</th>
+    <th>Pcompany</th>
+    <th>Csalary</th>
+    <th>Esalary</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr> -->
+
+<!-- <%#@students.each do |student| %>
+  <tr>
+    <td><%#= student.name %></td>
+    <td><%#= student.address %></td>
+    <td><%#= student.phone %></td>
+    <td><%#= student.gurdian %></td>
+    <td><%#= student.email %></td>
+    <td><%#= student.gender %></td>
+    <td><%#= student.qualification %></td>
+    <td><%#= student.coaching %></td>
+    <td><%#= student.registration_type %></td>
+    <td><%#= student.cexam %></td>
+    <td><%#= student.place %></td>
+    <td><%#= student.state %></td>
+    <td><%#= student.course %></td>
+    <td><%#= student.experience %></td>
+    <td><%#= student.pcompany %></td>
+    <td><%#= student.csalary %></td>
+    <td><%#= student.esalary %></td>
+    <td><%#= link_to 'Show', student %></td>
+    <td><%#= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%#= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<%# end %>
+</table>
+
+<br />
+
+<%= link_to 'New Student', new_student_path %> -->

@@ -1,0 +1,103 @@
+<div class="cont-outer">
+    <div class="cont-inr">
+        <div class="cont-lft"  style="margin-bottom:3em;">
+            <h2 style="color: #19388A;font: bold 20px Arial, Helvetica, sans-serif">NEW STUDENT REGISTRATION FOR ADMISSION</h2>
+            <br/>
+           <%= form_for(@student) do |f| %>
+  <% if @student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+      <% @student.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "name of student" %><br />
+    <%= f.text_field :name, :size => "45" %>
+  </div>
+  <div class="field">
+    <%= f.label "name of gurdian with contact no"  %><br />
+    <%= f.text_field :gurdian, :size => "45" %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_area :address,:rows=>"10" %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.select :gender, [ 'Male', 'Female' ], :prompt => 'Select One...', :size => "45" %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone,:size => "45"  %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email,:size => "45"  %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :qualification %><br />
+    <%= f.text_field :qualification,:size => "45"  %>
+  </div>
+  
+  <div class="field">
+    <%#= f.label :registration_type %><br />
+    <%= f.hidden_field :registration_type, :value =>'admission'   %>
+  </div>
+  <div class="field">
+    <%= f.label 'which competitive exam faced in this year?' %><br />
+    <%= f.select :cexam, [ 'JEXPO','WBJEE', 'AIEEE', 'IIT-JEE', 'AIPMT', 'MAT', 'CAT' ], :prompt => 'Select One...' %>
+  </div>
+  <div class="field">
+    <%= f.label 'where you want to take admission' %><br />
+    <%= f.text_field :place %>
+  </div>
+  <div class="field">
+    <%= f.label 'which state do you preferred' %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label 'which course do you want' %><br />
+    <%= f.select :course, ['DIPLOMA', 'B.TECH', 'MBBS', 'BDS', 'MBA', 'BHM'], :prompt => 'Select One.....'  %>
+  </div>
+  <!-- <div class="field">
+    <%= f.label :experience %><br />
+    <%= f.text_field :experience %>
+  </div>
+  <div class="field">
+    <%= f.label :pcompany %><br />
+    <%= f.text_field :pcompany %>
+  </div>
+  <div class="field">
+    <%= f.label :csalary %><br />
+    <%= f.text_field :csalary %>
+  </div>
+  <div class="field">
+    <%= f.label :esalary %><br />
+    <%= f.text_field :esalary %>
+  </div> -->
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
+<%= link_to 'Back', students_path %>
+            
+       
+     
+        </div>
+<br/><br/>
+        <!--Content Right-->
+        <div class="cont-rgt">
+            <a href="#" title="Download Brochure"><img src="/images/btn-download-brochure.png" alt="Download Brochure" /></a>
+            <%= render "shared/right_content" %>
+        </div>
+
