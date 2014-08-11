@@ -1,4 +1,11 @@
 Studyline::Application.routes.draw do
+  resources :students do
+    collection do
+      get 'new_admission', 'new_placement'
+    end
+  end
+
+
   resources :contacts
 
 

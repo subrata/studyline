@@ -184,7 +184,7 @@ ul.techicons li span {float:left; background:url(../images/bg-tech-tcon.png) 0 0
 .connect ul {margin-top:20px; margin-left:10px}
 .connect ul li {float:left; margin-right:5px}
 
-.news-outer, .free-quote {padding:9px; border:solid 1px #d7d7d7; margin-top:10px; overflow:hidden}
+.news-outer, .free-quote {padding:9px; border:solid 2px #d7d7d7; margin-top:10px; overflow:hidden}
 .news-outer h2 {border-bottom:solid 1px #fa9700; padding-bottom:3px}
 .neswbox {border-bottom:solid 1px #d4d4d4; padding-bottom:15px; overflow:hidden}
 .neswbox p {font-family:Tahoma, Helvetica, sans-serif; font-size:15px; line-height:18px; font-weight:normal; color:#6d7487; padding-top:10px}
@@ -246,7 +246,16 @@ ul.foot-links li a:hover {color:#ff9600}
 .slide-position {position:absolute; top:61px; left:28px; width: 380px; height: 214px; overflow: hidden;}
 
 
-
+.sregistration{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+}
+.sregistration ul li {
+	list-style: square;
+}
+.sregistration ul li a:hover{
+	background:none;
+}
 
 
 

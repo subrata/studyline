@@ -54,3 +54,28 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+div.field{
+	width:250px;
+	font-weight: bold;
+	font-size:14px;
+}
+.sregistration{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+}
+.sregistration ul li {
+	list-style: square;
+}
+	
+.sregistration ul li a:hover{
+	background:none;
+}
+
+ input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  /*width: 98%;*/
+  padding: 5px;
+  height: auto !important;
+  margin-bottom: 13px;
+ font-size: 14px;
+}
