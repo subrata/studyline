@@ -1,22 +1,35 @@
 <div class="cont-outer">
     <div class="cont-inr">
-        <div class="cont-lft">
-            <h2 style="color: #19388A;font: bold 20px Arial, Helvetica, sans-serif">Student Registration:</h2>
+        <div class="cont-lft-new">
+            <div class="titlebar2">Student Registration:</div>
             
-            <ul class="sregistration" style="padding-top: 3em; ">
-            	<li><%= link_to 'REGISTRATION FOR COACHING:', new_student_path %></li><br/>
-            	<li><%=  link_to "REGISTRATION FOR ADMISSION:",  new_admission_students_path %></li><br/>
-            	<li><%=  link_to "REGISTRATION FOR TRAINING AND PLACEMENT::",  new_placement_students_path %></li><br/>
+            <ul class="sregistration" style=" ">
+            	<div id="coaching">
+				<b>COACHING :</b> JEXPO-students who are now in the class of  X,XI,XII and want to prepair them for the examination JEXPO for complete  a diploma coarse in engineering and technology They may take admission for  one year class room programme  with low fees but standard education
+				 WBJEE-students who want to complete degree coarse in engineering and technology/ medical from class XI,XII  or passed out of class XII, They may take admission for  one year or two year class room programme for preparation  WBJEE/AIEEE/IIT-JEE with low fees but standard education.
+				 We prepare  the students very  very  carefully we observe the weak point of the students and hearty try  to solve their problems . mainly we force them to practice and there will be 24x7 hours solve classes. Our teachers are highly qualified and also experienced we want to prepare low and medium class students .we don't serve education  as a business mind. every students have their  own  quality .we just help them to reach their goal ,students who are interests please register your name to the site/ fillup the form here				 
+			     </div>
+            	<li style="margin-left:2em;"><%= link_to 'REGISTRATION FOR COACHING:', new_student_path %></li><br/>
+            	<br/>
+            	
+            	<div id="admision">
+            	<b>ADMISSION :</b>We offer direct admission  for the students to complete their higher studies in engineering,technology,management,medical after class x or xii all over india including west Bengal, Orrisa, Bangalore,etc..we help to take admission in genuine  rate and timely admission are not  agent, we advise to take proper coarse that you adjust and build your carrier according your financial condition we choose high quality grade 'A' colleges to take admission with lowest costthat you can bear,and fullfill your ambission.our coarse are DIPLOMA/B.TECH/MBBS/BDS/BBA/BCA/MBA/LLB/NURSHING  etc.
+				<li style="margin-left:2em;"><%=  link_to "REGISTRATION FOR ADMISSION:",  new_admission_students_path %></li><br/>
+            	</div>
+            	<br/>
+            	
+            	<div id="placement">
+				<b>TRANING & PLACEMENT :</b>We provide training the students in the field of   the engineering and technology .also we send the students to the different companies to get proper training so that they can improve their quality. 
+				 Placement cell provide a appropriate person at appropriate jod.freshers and experience persons may contact us to get proper satisfied job in all over india in the field of  oil,gas,manufacturer,civil,construction ,plastic,electrical, producing company etc.employee and employer both can contact with us.please register below for appropriate operation
+				 </div>
+            	<li style="margin-left:2em;"><%=  link_to "REGISTRATION FOR TRAINING AND PLACEMENT:",  new_placement_students_path %></li><br/>
             </ul>
-            <p style="margin-top:1em;font:bold 20px Arial">This page is under Construction</p>
-     
-       
-     
+                 
         </div>
 
         <!--Content Right-->
-        <div class="cont-rgt">
-            <a href="#" title="Download Brochure"><img src="/images/btn-download-brochure.png" alt="Download Brochure" /></a>
+        <div class="cont-rgt-new" style="min-height:817px">
+            <!-- <a href="#" title="Download Brochure"><img src="/images/btn-download-brochure.png" alt="Download Brochure" /></a> -->
             <%= render "shared/right_content" %>
         </div>
 

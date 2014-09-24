@@ -1,7 +1,7 @@
 <div class="cont-outer">
     <div class="cont-inr">
-        <div class="cont-lft"  style="margin-bottom:3em;">
-            <h2 style="color: #19388A;font: bold 20px Arial, Helvetica, sans-serif">NEW STUDENT REGISTRATION FOR ADMISSION</h2>
+        <div class="cont-lft-new"  style="">
+            <div class="titlebar2">STUDENT REGISTRATION FOR ADMISSION</div>
             <br/>
            <%= form_for(@student) do |f| %>
   <% if @student.errors.any? %>
@@ -26,7 +26,7 @@
   </div>
   <div class="field">
     <%= f.label :address %><br />
-    <%= f.text_area :address,:rows=>"10" %>
+    <%= f.text_area :address,:rows=>"10", :cols=>"48" %>
   </div>
   <div class="field">
     <%= f.label :gender %><br />
@@ -57,11 +57,11 @@
   </div>
   <div class="field">
     <%= f.label 'where you want to take admission' %><br />
-    <%= f.text_field :place %>
+    <%= f.text_field :place,:size => "45" %>
   </div>
   <div class="field">
     <%= f.label 'which state do you preferred' %><br />
-    <%= f.text_field :state %>
+    <%= f.text_field :state,:size => "45" %>
   </div>
   <div class="field">
     <%= f.label 'which course do you want' %><br />
@@ -84,20 +84,18 @@
     <%= f.text_field :esalary %>
   </div> -->
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "submit",  :src =>'/images/submit2.png', :type => "image", :style=>"border: medium none;"%>
   </div>
 <% end %>
 
 
 <%= link_to 'Back', students_path %>
-            
-       
-     
+                 
         </div>
-<br/><br/>
         <!--Content Right-->
-        <div class="cont-rgt">
-            <a href="#" title="Download Brochure"><img src="/images/btn-download-brochure.png" alt="Download Brochure" /></a>
+        <div class="cont-rgt-new" style="height:1138px">
+            <!-- <a href="#" title="Download Brochure"><img src="/images/btn-download-brochure.png" alt="Download Brochure" /></a> -->
             <%= render "shared/right_content" %>
         </div>
-
+</div>
+</div>

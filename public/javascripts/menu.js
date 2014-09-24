@@ -4,11 +4,11 @@ menu1[1]='<a href="/homes/about_company">Vision and Mission</a>'
 
 //Contents for menu 2, and so on
 var menu2=new Array()
-menu2[0]='<a href="/services/web_development">Training</a>'
-menu2[1]='<a href="/services/mobility">Placement </a>'
-menu2[2]='<a href="/services/outsourcing">Placements</a>'
-menu2[3]='<a href="/services/design">Placements</a>'
-menu2[4]='<a href="#">Placements</a>'
+menu2[0]='<a href="/homes/service#coaching">Coaching</a>'
+menu2[1]='<a href="/homes/service#admission">Admission </a>'
+menu2[2]='<a href="/homes/service#training">Training</a>'
+menu2[3]='<a href="/homes/service#placement">Placements</a>'
+//menu2[4]='<a href="#">Placements</a>'
 		
 var menuwidth='165px' //default menu width
 var menubgcolor='#bfe4f3'  //menu bgcolor

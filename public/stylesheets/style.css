@@ -4,9 +4,9 @@
 body {padding:0; margin:0;}
 * {padding:0; margin:0;}
 /*a {display:block;}*/
-a {outline:none; text-decoration:none;}
+a {outline:none; text-decoration:none;background:none;}
 a:hover {text-decoration:underline;}
-img {border:none;}
+img {border:none;background:none;}
 .spacer {clear:both; font-size:0; line-height:0;}
 
 /* Lists */
@@ -109,7 +109,9 @@ ul.social-media li a.facebook {background:url(../images/sprite-1.png) 0px -57px 
 ul.social-media li a.twitter {background:url(../images/sprite-1.png) 0px -32px no-repeat;}
 
 .logo-sp {float:left; margin-top:15px}
+.logo-sp a{background:none;}
 .mail-sp {float:right; width:195px; margin-top:28px}
+.mail-sp a{background:none;} 
 .mailto, .ph-no {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:20px; line-height:26px; color:#595a5a}
 .mailto:hover {color:#fb8c00; -moz-transition:all 0.5s ease-out; -webkit-transition:all 0.3s ease-out;
 -o-transition:all 0.3s ease-out; -ms-transition:all 0.3s ease-out;}
@@ -147,7 +149,7 @@ ul.menu li span {float:left; background:url(../images/arrow-1.jpg) 100% 40% no-r
 
 /* CONTENT ===========================================================================================*/
 .cont-outer {width:100%; background:url(../images/bg-cont-outer.png) center 5px repeat-y #f4f4f4;}
-.cont-inr {max-width:962px; width:100%; padding-top:27px; margin:auto; overflow:hidden}
+.cont-inr {max-width:962px; width:100%; /*padding-top:27px;*/ margin:auto; overflow:hidden}
 .cont-lft {float:left; max-width:654px; width:100%}
 .cont-lft h2 {font-family:Arial, Helvetica, sans-serif; font-size:24px; line-height:30px; font-weight:normal; color:#333333; padding-bottom:10px}
 .cont-lft p {font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:15px; color:#8f8f8f}
@@ -209,7 +211,7 @@ ul.techicons li span {float:left; background:url(../images/bg-tech-tcon.png) 0 0
 .footer-top-lft {float:left; width:650px; background:#161616; padding:20px; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;}
 .footer-top-lft ul {float:left; width:207px}
 .footer-top-lft ul li {font-family:"Britannic Bold", sans-serif, Arial, Helvetica, sans-serif; font-size:18px; line-height:22px; color:#fff;}
-.footer-top-lft ul li a {font-family:/*"Myriad Pro"*/Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#b0b0b0;}
+.footer-top-lft ul li a {font-family:/*"Myriad Pro"*/Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#b0b0b0;background:none;}
 
 
 .footer-top-rgt {float:right; width:300px}
@@ -229,7 +231,7 @@ ul.footer-contact li.phone {background:url(../images/sprite-1.png) 0 -104px no-r
 .copyight {float:left; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#ff9600;}
 ul.foot-links {float:right;}
 ul.foot-links li {float:left; font-size:12px; line-height:15px; color:#9a9a9a; margin:0 2px}
-ul.foot-links li a {font-family:Arial, Helvetica, sans-serif; color:#9a9a9a}
+ul.foot-links li a {font-family:Arial, Helvetica, sans-serif; color:#9a9a9a; background: none;}
 ul.foot-links li a:hover {color:#ff9600}
 
 
@@ -248,15 +250,44 @@ ul.foot-links li a:hover {color:#ff9600}
 
 .sregistration{
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size:   13px;
+  font-size:   14px;
 }
-.sregistration ul li {
+.sregistration li {
 	list-style: square;
 }
-.sregistration ul li a:hover{
+.sregistration li a{
 	background:none;
+	color: #1924A5;
+}
+.sregistration li a:hover{
+	font-size:   15px;
+	font-weight: bold;
 }
 
+.titlebar2 {
+    padding-top: 10px;
+    background: url('/images/content_headeing2.gif') repeat-x scroll left top transparent;
+    line-height: 58px;
+    position: relative;
+    padding-left: 15px;
+    color: #FFF;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 0px;
+    height: 64px;
+    margin-bottom: 1em;
+    width: 98%;
+    
+}
 
-
-
+.cont-inr-new{
+	background: none repeat scroll 0% 0% #E2E5EA;
+	overflow: hidden;
+	padding: 10px;
+	margin-left:12.5%;
+	margin-right:12.5%;
+}
+.cont-lft-new { min-height:700px; padding:10px 10px 100px 10px; float:left; max-width:654px; width:100%;background: none repeat scroll 0% 0% #E2E5EA;}
+.cont-rgt-new{min-height:700px;padding:10px;  float: right; width: 256px; background:#E2E5EA;}
+.cont-lft-new ul{font-family:Arial, Helvetica, sans-serif; font-size: 15px; line-height:19px; padding-left: 10px;}
+.cont-lft-new a{background:none; color:blue;}
