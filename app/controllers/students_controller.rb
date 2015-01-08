@@ -61,7 +61,8 @@ class StudentsController < ApplicationController
     @student = Student.new(params[:student])
 
     respond_to do |format|
-      if @student.save
+      if @student.save                
+        UserMailer.students_regis_email(@student).deliver
         format.html { redirect_to @student, notice: 'Student was successfully created.' }
         format.json { render json: @student, status: :created, location: @student }
       else

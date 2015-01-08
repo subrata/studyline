@@ -10,6 +10,6 @@ class HomesController < ApplicationController
   end
 
   def privacy
-  end
-    
+  end    
+  
 end

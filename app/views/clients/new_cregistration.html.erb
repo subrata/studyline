@@ -1,0 +1,73 @@
+<div class="cont-outer">
+  <div class="cont-inr">
+    <div class="cont-lft-new"  style="">
+      <div class="titlebar2">CLIENT REGISTRATION </div>
+      <br/>
+      <%= form_for(@client) do |f| %>
+        <% if @client.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@client.errors.count, "error") %> prohibited this Client from being saved:</h2>
+
+            <ul>
+              <% @client.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <%= f.hidden_field :registration_type, :value =>'client'   %>
+
+        <div class="field">
+          <%= f.label "Name of college" %><br />
+          <%= f.text_field :cname, :size => "45" %>
+        </div>
+        <div class="field">
+          <%= f.label "Name of University" %><br />
+          <%= f.text_field :uname, :size => "45" %>
+        </div>
+        <div class="field">
+          <%= f.label "Address of college"  %><br />
+          <%= f.text_area :address, :size => "45" %>
+        </div>
+        <div class="field">
+          <%= f.label :"Contact No" %><br />
+          <%= f.text_field :contact_no,:rows=>"10", :cols=>"48" %>
+        </div>
+        <div class="field">
+          <%= f.label :"Email" %><br />
+          <%= f.text_field :email,:rows=>"10", :cols=>"48" %>
+        </div>
+        <div class="field">
+          <%= f.label :"Course Offered" %><br />
+          <%= f.text_field :coffer,:rows=>"10", :cols=>"48" %>
+        </div>
+        <div class="field">
+          <%= f.label :"System for tie up with consultancy" %><br />
+          <%= f.text_field :tie_consultancy,:rows=>"10", :cols=>"48" %>
+        </div>
+        <div class="field">
+          <%= f.label :"Contact Person" %><br />
+          <%= f.text_field :contact_person,:rows=>"10", :cols=>"48" %>
+        </div>
+        <div class="field">
+          <%= f.label :"Mobile No" %><br />
+          <%= f.text_field :mobile_no,:rows=>"10", :cols=>"48" %>
+        </div>
+
+
+
+
+        <div class="actions">
+          <%= f.submit "submit",  :src =>'/images/submit2.png', :type => "image", :style=>"border: medium none;"%>
+        </div>
+      <% end %>
+
+
+<%#= link_to 'Back', clients_path %>
+
+    </div>
+    <!--Content Right-->
+
+  </div>
+</div>

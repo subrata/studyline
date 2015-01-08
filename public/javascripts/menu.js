@@ -9,7 +9,12 @@ menu2[1]='<a href="/homes/service#admission">Admission </a>'
 menu2[2]='<a href="/homes/service#training">Training</a>'
 menu2[3]='<a href="/homes/service#placement">Placements</a>'
 //menu2[4]='<a href="#">Placements</a>'
-		
+
+var menu3=new Array()
+menu3[0]='<a href="/clients/new_cregistration">Client Registration</a>'
+menu3[1]='<a href="/clients/new_mregistration">Manpower  Registration</a>'
+
+
 var menuwidth='165px' //default menu width
 var menubgcolor='#bfe4f3'  //menu bgcolor
 var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
