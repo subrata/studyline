@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to studyline.in</h1>
+    <p>
+      You have successfully registration up to studyline.in using the email id <%= @client.email %><br>
+      and NAME:<%= @client.registration_type == 'client' ? @client.cname : @client.com_name %>.<br>
+    </p>   
+    <h2>Here is your details that submitted in our webpage</h2><br>
+    
+<% if @client.registration_type=='client'  %>
+
+    <p><h2><u>Client Registration</u></h2></p>
+    <p>
+  <b>Name of the college:</b>
+  <%= @client.cname %>
+</p>
+<p>
+  <b>Address of the college:</b>
+  <%= @client.address %>
+</p>
+<p>
+  <b>contact no</b>
+  <%= @client.contact_no %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @client.email %>
+</p>
+
+<p>
+  <b>Name of university</b>
+  <%= @client.uname %>
+</p>
+<p>
+  <b>contact person</b>
+  <%= @client.contact_person %>
+</p>
+<p>
+  <b>Mobile no</b>
+  <%= @client.mobile_no %>
+</p>
+<p>
+  <b>Coarse offered</b>
+  <%= @client.coffer %>
+</p>
+
+<%  else %>
+<p><h2><u>Manpower Registration</u></h2></p>
+
+ <p>
+  <b>Name of company</b>
+  <%= @client.com_name %>
+</p>
+<p>
+  <b>address of company</b>
+  <%= @client.address %>
+</p>
+<p>
+  <b>contact no</b>
+  <%= @client.contact_no %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @client.email %>
+</p>  
+<p>
+  <b>system for tie up with consultancy</b>
+  <%= @client.tie_consultancy %>
+</p>  
+<p>
+  <b>contact person</b>
+  <%= @client.contact_person %>
+</p>
+<p>
+  <b>Mobile no</b>
+  <%= @client.mobile_no %>
+</p>
+<p>
+  <b>Type of manpower</b>
+  <%= @client.type_of_manpower %>
+</p>
+
+<%end%>
+
+
+
+    <p>Thanks for joining with us and have a great day!</p>
+    <p>For any Enquiry or support please call us <b>+91 8479842821</b> <br>
+      or visit our webpage <b> support@studyline.in</b>
+    </p>
+  </body>
+</html>

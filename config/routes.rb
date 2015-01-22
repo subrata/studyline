@@ -7,7 +7,13 @@ Studyline::Application.routes.draw do
 
 
   resources :contacts
-
+  
+  resources :clients do
+    collection do
+      get 'new_cregistration', 'new_cregistration'
+      get 'new_mregistration', 'new_mregistration'
+    end
+  end
 
   get "homes/index"
 
@@ -17,7 +23,7 @@ Studyline::Application.routes.draw do
 
   get "homes/privacy"
   get "homes/service"
-
+  get "homes/client"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

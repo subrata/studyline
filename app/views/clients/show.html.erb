@@ -1,0 +1,78 @@
+<p id="notice"><%= notice %></p>
+<% if @client.registration_type=='client'  %>
+<p>
+  <b>Name of the college:</b>
+  <%= @client.cname %>
+</p>
+<p>
+  <b>Address of the college:</b>
+  <%= @client.address %>
+</p>
+<p>
+  <b>contact no</b>
+  <%= @client.contact_no %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @client.email %>
+</p>
+
+<p>
+  <b>Name of university</b>
+  <%= @client.uname %>
+</p>
+<p>
+  <b>contact person</b>
+  <%= @client.contact_person %>
+</p>
+<p>
+  <b>Mobile no</b>
+  <%= @client.mobile_no %>
+</p>
+<p>
+  <b>Coarse offered</b>
+  <%= @client.coffer %>
+</p>
+
+<%  else %>
+
+ <p>
+  <b>Name of company</b>
+  <%= @client.com_name %>
+</p>
+<p>
+  <b>address of company</b>
+  <%= @client.address %>
+</p>
+<p>
+  <b>contact no</b>
+  <%= @client.contact_no %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @client.email %>
+</p>  
+<p>
+  <b>system for tie up with consultancy</b>
+  <%= @client.tie_consultancy %>
+</p>  
+<p>
+  <b>contact person</b>
+  <%= @client.contact_person %>
+</p>
+<p>
+  <b>Mobile no</b>
+  <%= @client.mobile_no %>
+</p>
+<p>
+  <b>Type of manpower</b>
+  <%= @client.type_of_manpower %>
+</p>
+
+<%end%>
+<%= link_to 'Edit', '#' %> |
+<%= link_to 'Back', root_path %>
+
+

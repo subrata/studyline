@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Welcome to studyline.in</h1>
+    <p>
+      You have successfully registration up to studyline.in using the email id <%= @student.email %><br>
+
+    </p>   
+    <h2>Here is your details that submitted in our webpage</h2><br>
+
+    <p><h2><u><%= @student.registration_type %> registration</u></h2></p>
+
+  <% if @student.registration_type=='coaching'  %>
+    <p>
+      <b>Name of student</b>
+      <%= @student.name %>
+    </p>
+    <p>
+      <b>Name of gurdian with contact no</b>
+      <%= @student.gurdian %>
+    </p>
+    <p>
+      <b>Address</b>
+      <%= @student.address %>
+    </p>
+
+    <p>
+      <b>Gender</b>
+      <%= @student.gender %>
+    </p>
+
+    <p>
+      <b>Phone</b>
+      <%= @student.phone %>
+    </p>
+    <p>
+      <b>Email</b>
+      <%= @student.email %>
+    </p>
+    <p>
+      <b>Qualification</b>
+      <%= @student.qualification %>
+    </p>
+    <p>
+      <b>Coaching</b>
+      <%= @student.coaching %>
+    </p>
+
+  <%elsif @student.registration_type=='admission' %>
+
+    <p>
+      <b>Name of student</b>
+      <%= @student.name %>
+    </p>
+    <p>
+      <b>Name of gurdian with contact no</b>
+      <%= @student.gurdian %>
+    </p>
+    <p>
+      <b>Address</b>
+      <%= @student.address %>
+    </p>
+
+    <p>
+      <b>Gender</b>
+      <%= @student.gender %>
+    </p>
+
+    <p>
+      <b>Phone</b>
+      <%= @student.phone %>
+    </p>
+    <p>
+      <b>Email</b>
+      <%= @student.email %>
+    </p>
+    <p>
+      <b>Qualification</b>
+      <%= @student.qualification %>
+    </p>
+
+    <p>
+      <b>Competitive exam faced</b>
+      <%= @student.cexam %>
+    </p>
+    <p>
+      <b>Want to take admission</b>
+      <%= @student.place %>
+    </p>
+    <p>
+      <b>State you preferred</b>
+      <%= @student.state %>
+    </p>
+    <p>
+      <b>Course you want</b>
+      <%= @student.course %>
+    </p>
+
+
+  <%else%>
+
+    <p>
+      <b>Name of student</b>
+      <%= @student.name %>
+    </p>
+    <p>
+      <b>Name of gurdian with contact no</b>
+      <%= @student.gurdian %>
+    </p>
+    <p>
+      <b>Address</b>
+      <%= @student.address %>
+    </p>
+    <p>
+      <b>Gender</b>
+      <%= @student.gender %>
+    </p>
+
+    <p>
+      <b>Phone</b>
+      <%= @student.phone %>
+    </p>
+    <p>
+      <b>Email</b>
+      <%= @student.email %>
+    </p>
+    <p>
+      <b>Qualification</b>
+      <%= @student.qualification %>
+    </p>
+
+    <p>
+      <b>You want to go</b>
+      <%= @student.place%>
+    </p>
+    <p>
+      <b>Experience</b>
+      <%= @student.experience %>
+    </p>
+    <p>
+      <b>Present company</b>
+      <%= @student.pcompany %>
+    </p>
+    <p>
+      <b>Current salary</b>
+      <%= @student.csalary %>
+    </p>
+    <p>
+      <b>Expected salary</b>
+      <%= @student.esalary %>
+    </p>  
+  <%end%>
+
+  <p>Thanks for joining with us and have a great day!</p>
+  <p>For any Enquiry or support please call us <b>+91 8479842821</b> <br>
+    or visit our webpage <b> support@studyline.in</b>
+  </p>
+</body>
+</html>
