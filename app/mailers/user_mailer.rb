@@ -6,6 +6,7 @@ class UserMailer < ActionMailer::Base
     @url  = 'http://studyline.in/'
     mail(to: @client.email, subject: 'Welcome to My studyline.in')
     mail(to: "pmc.subrata@gmail.com", subject: 'Welcome to My studyline.in(A copy to admin)', body:"For client registration")
+
   end
   
   def students_regis_email(student)
