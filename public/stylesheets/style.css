@@ -291,3 +291,10 @@ ul.foot-links li a:hover {color:#ff9600}
 .cont-rgt-new{min-height:700px;padding:10px;  float: right; width: 256px; background:#E2E5EA;}
 .cont-lft-new ul{font-family:Arial, Helvetica, sans-serif; font-size: 15px; line-height:19px; padding-left: 10px;}
 .cont-lft-new a{background:none; color:blue;}
+
+#coaching{
+	line-height:20px;
+	text-align:justify;
+	
+}
+.course li img{ margin:10px;}
