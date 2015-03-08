@@ -117,14 +117,17 @@ ul.social-media li a.twitter {background:url(../images/sprite-1.png) 0px -32px n
 -o-transition:all 0.3s ease-out; -ms-transition:all 0.3s ease-out;}
 .ph-no {background:url(../images/sprite-1.png) 0px 0px no-repeat; padding:2px 0 5px 35px; margin-top:2px; display:block}
 
-.header-botm-outer {width:100%; min-height:348px; background:url(../images/bg-hedr-botm.jpg) 0px 0px repeat-x;}
-.hedr-botm-inr {background:url(../images/bg-hedr-botm-main.jpg) center top no-repeat; min-height:348px;}
+/*.header-botm-outer {width:100%; min-height:348px; background:url(../images/bg-hedr-botm.jpg) 0px 0px repeat-x;}
+.hedr-botm-inr {background:url(../images/bg-hedr-botm-main.jpg) center top no-repeat; min-height:348px;}*/
+.header-botm-outer {width:100%; min-height:348px; background:url(../images/expert/home-pic1.jpg) 0px 0px repeat-x;}
+.hedr-botm-inr {background:url(../images/) center top no-repeat; min-height:348px;}
 .header-botm-inr-main {max-width:1003px; padding-top:8px; margin:auto; overflow:hidden}
 .bannerlft {float:left; max-width:395px; padding-top:25px}
 .bannerlft h2 {font-family:"Myriad Pro", Arial, Helvetica, sans-serif; font-size:40px; line-height:48px; font-weight:normal; color:#ededed; text-transform:uppercase; text-shadow:1px 5px 10px #000}
 .bannerlft p {font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:16px; font-weight:normal; color:#fff;}
 
-.bannerrgt {float:right; max-width:441px; width:100%; height:339px; background:url(../images/moitor.png) 0 0 no-repeat; margin-right:20px}
+/*.bannerrgt {float:right; max-width:441px; width:100%; height:339px; background:url(../images/moitor.png) 0 0 no-repeat; margin-right:20px}*/
+.bannerrgt {float:right; max-width:441px; width:100%; height:339px; background:url(../images/) 0 0 no-repeat; margin-right:20px}
 
 
 /* NAVIGATION============================================================== */
@@ -159,7 +162,7 @@ ul.menu li span {float:left; background:url(../images/arrow-1.jpg) 100% 40% no-r
 .app-head-out {width:100%; background:url(../images/bg-tech-head.png) 0 50% repeat-x; margin-bottom:10px; overflow:hidden}
 .app-head-out h2 {font-family:"Britannic Bold", sans-serif, Arial, Helvetica, sans-serif; font-size:18px; line-height:20px; color:#505050; font-weight:normal; float:left; padding:0px; padding-right:10px; background:#fff}
 .app-head-rgt {float:right;}
-.app-box p{font-family:Arial, sans-serif, Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#8f8f8f;}
+.app-box p{font-family:Arial, sans-serif, Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; color:#141823;}
 .appbox-links {background:url(../images/bg-app-links.jpg) 0 0 repeat-x; overflow:hidden}
 .more {float:right; background:url(../images/sprite-1.png) 100% -125px no-repeat; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:15px; color:#e05504; font-weight:bold; padding-right:15px; margin-top:5px}
 .web-development-details {width:310px; background:url(../images/bg-web-developement.jpg) right bottom no-repeat;}
